@@ -1288,6 +1288,7 @@ document.addEventListener('keydown', (e) => {
     case 'n': case 'N': talkToNPC(); break;
     case 'h': case 'H': openHousingMenu(); break;
     case 'm': case 'M': openFullMap(); break;
+    case 'x': case 'X': if(typeof openExplore === 'function') openExplore(G.location); break;
     case 'b': case 'B': saveToBank(); break;
     case 'v': case 'V': openVehicleDealer(); break;
     case 'k': case 'K': openStockMarket(); break;
